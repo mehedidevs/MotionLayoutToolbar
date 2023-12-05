@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/activity_main_scene"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/top_back"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/rent_it_gradiant_top_back"
+        app:altSrc="@drawable/rent_it_solid_top_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <View
+        android:id="@+id/shape_view"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:alpha="1"
+        android:background="@drawable/rent_it_top_bar_mask"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="@id/top_back"
+        app:layout_constraintStart_toStartOf="@id/top_back"
+        app:layout_constraintTop_toBottomOf="@id/top_back">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A Performance Boost
+By harnessing the power of a HashMap, we've turbocharged our event handling. The time complexity for handling an event is now a lightning-fast (O(1)), a monumental improvement over the (O(n)) time complexity of the ponderous when statement. While our payload mechanism adds a dollop of syntactic sugar. It enables us to bundle all the necessary data into a single object, making our code more legible and maintainable.
+
+💡 Note: Using a HashMap instead of a large when() statement provides a significant performance improvement. It can be up to 40 to 150 times faster. However, explaining the details would exceed the scope of this blog post. Therefore, I will cover it, along with other Kotlin performance puzzles, in a future blog post.
+
+While the refactored code remains as simple as before:" />
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.motion.widget.MotionLayout>
